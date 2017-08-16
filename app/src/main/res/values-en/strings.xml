@@ -5,6 +5,8 @@
     <string name="calcular">operator</string>
     <string name="resultado">result</string>
     <string name="primer_numero">number one</string>
-    <string name="segundo_numero">number_two</string>
+    <string name="segundo_numero">number two</string>
     <string name="titulo">title</string>
+    <string name="mensaje_error_uno">type number one</string>
+    <string name="mensaje_error_dos">type number two</string>
 </resources>

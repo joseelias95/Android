@@ -6,4 +6,6 @@
     <string name="segundo_numero">Segundo Numero</string>
     <string name="calcular">calcular</string>
     <string name="borrar">borrar</string>
+    <string name="mensaje_error_uno">Digite numero uno</string>
+    <string name="mensaje_error_dos">Digite el numero dos</string>
 </resources>
