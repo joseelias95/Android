@@ -20,4 +20,5 @@
         <item>@string/Multiplicacion</item>
         <item>@string/Division</item>
     </string-array>
+    <string name="mensaje_error_tres">las divisiones entre 0 no se pueden hacer</string>
 </resources>

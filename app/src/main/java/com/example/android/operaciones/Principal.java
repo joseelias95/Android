@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Principal extends AppCompatActivity {
     private TextView res;
@@ -37,7 +38,7 @@ public class Principal extends AppCompatActivity {
     public void calcular(View v){
         int opcion;
         double num1, num2, resultado= 0;
-
+        res.setText("");
         if (validar()){
 
             opcion = operaciones.getSelectedItemPosition();
@@ -58,13 +59,14 @@ public class Principal extends AppCompatActivity {
                     break;
             }
 
-            res.setText(" "+resultado);
+            res.setText(" "+String.format("%.2f",resultado));
         }
 
 
     }
     public void borrar(View v){
 
+        operaciones.setSelection(0);
         n1.setText("");
         n2.setText("");
         res.setText("");
@@ -73,6 +75,8 @@ public class Principal extends AppCompatActivity {
     }
 
     public boolean validar(){
+        int posicion = operaciones.getSelectedItemPosition();
+
         if (n1.getText().toString().isEmpty()){
             n1.setError(resources.getString(R.string.mensaje_error_uno));
             return false;
@@ -80,6 +84,11 @@ public class Principal extends AppCompatActivity {
 
         if (n2.getText().toString().isEmpty()){
             n2.setError(resources.getString(R.string.mensaje_error_dos));
+            return false;
+        }
+
+        if ((Double.parseDouble(n2.getText().toString()) == 0) && posicion == 3){
+            Toast.makeText(this, resources.getString(R.string.mensaje_error_tres), Toast.LENGTH_SHORT).show();
             return false;
         }
 
