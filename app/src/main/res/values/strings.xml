@@ -8,4 +8,16 @@
     <string name="borrar">borrar</string>
     <string name="mensaje_error_uno">Digite numero uno</string>
     <string name="mensaje_error_dos">Digite el numero dos</string>
+    <string name="Operaciones">Operaciones</string>
+    <string name="Resultado">Resultado</string>
+    <string name="Suma">Suma</string>
+    <string name="Resta">Resta</string>
+    <string name="Multiplicacion">Mutiplicación</string>
+    <string name="Division">División</string>
+    <string-array name="operaciones">
+        <item>@string/Suma</item>
+        <item>@string/Resta</item>
+        <item>@string/Multiplicacion</item>
+        <item>@string/Division</item>
+    </string-array>
 </resources>

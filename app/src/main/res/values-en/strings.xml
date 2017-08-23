@@ -9,4 +9,10 @@
     <string name="titulo">title</string>
     <string name="mensaje_error_uno">type number one</string>
     <string name="mensaje_error_dos">type number two</string>
+    <string name="Multiplicacion">Multiplication</string>
+    <string name="Operaciones">Operator</string>
+    <string name="Resta">Rest</string>
+    <string name="Suma">Add</string>
+    <string name="Division">Division</string>
+    <string name="Resultado">Result</string>
 </resources>
