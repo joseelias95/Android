@@ -35,12 +35,29 @@ public class Principal extends AppCompatActivity {
     }
 
     public void calcular(View v){
-        int num1, num2, resultado;
+        int opcion;
+        double num1, num2, resultado= 0;
 
         if (validar()){
-            num1 = Integer.parseInt(n1.getText().toString());
-            num2 = Integer.parseInt(n2.getText().toString());
-            resultado = num1 + num2;
+
+            opcion = operaciones.getSelectedItemPosition();
+            num1 = Double.parseDouble(n1.getText().toString());
+            num2 = Double.parseDouble(n2.getText().toString());
+            switch (opcion){
+                case 0:
+                    resultado = num1 + num2;
+                    break;
+                case 1:
+                    resultado = num1 - num2;
+                    break;
+                case 2:
+                    resultado = num1 * num2;
+                    break;
+                case 3:
+                    resultado = num1 / num2;
+                    break;
+            }
+
             res.setText(" "+resultado);
         }
 
